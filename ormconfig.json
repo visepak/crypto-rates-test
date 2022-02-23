@@ -1,0 +1,16 @@
+[{
+  "name": "default",
+  "type": "postgres",
+  "schema": "public",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "postgres",
+  "logging": true,
+  "synchronize": false,
+  "entities": ["src/orm/entity/*.entity.ts"],
+  "migrations": ["src/orm/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/*.ts,"],
+  "cli": { "entitiesDir": "src/orm/entities/*.entity.ts", "migrationsDir": "src/orm/migration", "subscribersDir": "src/subscriber" }
+}]
